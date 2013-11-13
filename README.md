@@ -7,7 +7,7 @@ Installation
 ------------
 Simply add a build dependency to your BuildConfig.groovy
 ```groovy
-build 'datasource-jndi-declare:1.0.0'
+build ':datasource-jndi-declare:1.0.0'
 ```
 
 Usage
