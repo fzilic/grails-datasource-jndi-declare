@@ -1,10 +1,22 @@
+grails.project.work.dir = 'target'
+
 grails.project.dependency.resolution = {
-  inherits("global")
+
+  inherits 'global'
+  log 'warn'
 
   repositories {
-    grailsPlugins();
-    grailsHome();
-    grailsCentral();
-    mavenLocal();
+    grailsCentral()
+    mavenLocal()
+    mavenCentral()
+  }
+
+  dependencies {
+  }
+
+  plugins {
+    build ':release:2.2.1', ':rest-client-builder:1.0.3', {
+      export = false
+    }
   }
 }
