@@ -1,0 +1,14 @@
+target
+.classpath
+.project
+.settings
+plugin.xml
+target-eclipse
+web-app
+stacktrace.log
+.svn
+.idea
+*.zip
+*.iml
+out
+classes
