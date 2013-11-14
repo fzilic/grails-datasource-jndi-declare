@@ -60,9 +60,6 @@ class UpdateWebDescriptorTest {
     application.config.dataSource.dbCreate = 'create-drop'
     application.config.dataSource.url = 'jdbc:h2:mem:devDb;MVCC=TRUE'
 
-//    def config = (application.config as ConfigObject)
-//    application.config = config
-
     def datasources = application.config.findAll { it.key =~ /^dataSource.*/ }
 
     def xml = new XmlSlurper().parseText(WEB_XML)
@@ -96,7 +93,6 @@ class UpdateWebDescriptorTest {
     def resourceRef = given.'resource-ref'
     assert resourceRef
 
-//    assert resourceRef.'description' == 'app-name\'s datasource'
     assert resourceRef.'res-ref-name' == 'jdbc/ds'
     assert resourceRef.'res-type' == 'javax.sql.DataSource'
     assert resourceRef.'res-auth' == 'Container'
@@ -123,7 +119,6 @@ class UpdateWebDescriptorTest {
     def resourceRef = given.'resource-ref'
     assert resourceRef
 
-//    assert resourceRef.'description' == 'app-name\'s datasource'
     assert resourceRef.'res-ref-name' == 'jdbc/ds'
     assert resourceRef.'res-type' == 'javax.sql.DataSource'
     assert resourceRef.'res-auth' == 'Container'
