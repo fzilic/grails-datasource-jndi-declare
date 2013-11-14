@@ -20,8 +20,8 @@
 package org.grails.plugins.datasourcejndideclare
 
 import groovy.xml.StreamingMarkupBuilder
-import org.codehaus.groovy.grails.commons.ApplicationHolder
-import org.codehaus.groovy.grails.commons.DefaultGrailsApplication;
+
+import org.codehaus.groovy.grails.commons.DefaultGrailsApplication
 import org.junit.Test
 
 class UpdateWebDescriptorTest {
