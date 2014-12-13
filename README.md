@@ -1,6 +1,8 @@
 grails-datasource-jndi-declare
 ==============================
 
+[![Build Status](https://travis-ci.org/fzilic/grails-datasource-jndi-declare.svg)](https://travis-ci.org/fzilic/grails-datasource-jndi-declare)
+
 Simple grails plugin to declare jndi datasources as resource-ref elements in web.xml
 
 Installation
